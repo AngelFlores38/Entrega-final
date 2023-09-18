@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--CSS BOOTSTRAP-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+        <!--ICONOS BOOTSTRAP-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <!--CSS PROPIO-->
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Planes</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Diversa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Historia</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="precios.html">Planes y Precios</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+    </header>
+
+        <section>
+
+            <h1 class="text-center">La mejor navegacion para tus necesidades</h1>
+            <p class="text-center">Conoce nuestros planes</p>
+        
+            <div class="card-precios">
+                <input type="radio" name="seleccionado" id="empresas">
+                <input type="radio" name="seleccionado" id="hogares">
+                <input type="radio" name="seleccionado" id="todos" checked>
+        
+                <div class="container-opciones my-5">
+                    <label for="empresas" class="label-empresas">
+                        Empresas
+                    </label>
+        
+                    <label for="hogares" class="label-hogares">
+                        Hogares
+                    </label>
+        
+                    <label for="todos" class="label-todos">
+                        Ver todos
+                    </label>
+                </div>
+
+                <div class="container-cards">
+            <!--PLANES EMPRESAS-->
+            <!--Card6-->
+            <div class="card empresa" style="width: 18rem;">
+                <img src="../img/Card6.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Pyme Micro</h5>
+                <p class="card-text">Este plan esta diseñado para microemprendimientos. 6500$</p>
+                <a href="#" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+
+              <!--Card7-->
+              <div class="card empresa" style="width: 18rem;">
+                <img src="../img/Card7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">Pyme Basico</h5>
+                <p class="card-text">Hasta 5 puestos de trabajos.
+                    7600$
+                </p>
+                <a href="#" class="btn btn-primary">Ver</a>
+                </div>
+            </div>
+
+                <!--Card8-->
+                <div class="card empresa" style="width: 18rem;">
+                    <img src="../img/Card8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Diamante</h5>
+                    <p class="card-text">Hasta 12 puestos de trabajo
+                        9600$</p>
+                    <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+
+                <!--PLAN HOGAR-->
+                <!--Card9-->
+                <div class="card hogar" style="width: 18rem;">
+                    <img src="../img/Card9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Hogar Plus</h5>
+                    <p class="card-text">Plan ideal para el domicilio
+                        3000$
+                    </p>
+                    <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+
+                <!--Card10-->
+                <div class="card hogar" style="width: 18rem;">
+                    <img src="../img/Card10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Doble Play</h5>
+                    <p class="card-text">Navegacion 4k y canalaes hd
+                        4500$
+                    </p>
+                    <a href="#" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+            
+    
+        
+
+        <footer>
+            <h3>Podes visitarnos en nuestras redes</h3>
+    
+            <div class="redes d-flex justify-content-center">
+                <a href="https://www.instagram.com" target="_blank" class="me-5">
+                    <i class="bi bi-instagram"></i>
+                </a>
+    
+                <a href="https://www.tiktok.com" target="_blank" class="me-5">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+    
+                <a href="https://www.youtube.com" target="_blank" class="me-5">
+                    <i class="bi bi-youtube"></i>
+                </a>
+    
+            </div> 
+            
+        </footer>
+
+        <!-- SCRIPT DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
