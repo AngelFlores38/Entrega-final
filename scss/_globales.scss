@@ -3,58 +3,18 @@
     padding: 0;
 }
 
-header {
-    background-color: burlywood;
-}
-
-
 
 a {
     text-decoration: none;
-    color: blueviolet;
+    color: white;
 }
 
 img {
     max-width: 100%;
 }
 
-body{
-    background-color: aquamarine;
-}
-
-.nav-link {
-    font-weight: bolder;
-    color: rgb(12, 17, 20);
-    font-size: 20px;
-}
 
 
-.carousel-item img {
-    height: 45vh;
-}
-
-@media (min-width: 520px) {
-    .carousel-item img {
-        height: 50vh;
-    }
-}
-
-@media (min-width: 678px) {
-    .carousel-item img {
-        height: 70vh;
-    }
-}
-
-@media (min-width: 1024px) {
-    .corousel-item img {
-        height:90vh;
-    }
-
-    #carouselExampleFade {
-        width: 70%;
-        margin: 0 auto;
-    }
-}
 
 /* PANTALLAS CHICAS*/
 .container-cards {
@@ -93,34 +53,9 @@ body{
     height: 300px;
 }
 
-h1, p {
-    text-align: center;
-}
 
-p {
-    font-weight: bold;
-}
 
-h3 {
-    text-align: center;
-    color: blue;
-}
 
-.bi {
-    font-size: 3rem;
-}
-
-.bi-instagram {
-    color: blue;
-}
-
-.bi-tiktok {
-    color: black;
-}
-
-.bi-youtube {
-    color: red;
-}
 
 /*Confi cards precios*/
 .empresa, .hogar {
@@ -181,10 +116,71 @@ display: grid;
 justify-content: end;
 }
 
-.centrado {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
+
+
+/*CON SASS*/
+body{
+    font-size: $fuente-principal;
+    background-color: $color-primario;
+    }
+
+        .nav-link  {
+            color: $color-secundario;
+        
+            &:hover{
+                color: yellow
+            }
+        }
+
+        .navbar-toggler {
+            background-color: $color-terciario;
+        }
+
+        .carousel-item img {
+            height: 250px;
+        }
+
+        @media (min-width: $tablet) {
+            .carousel-item img {
+                height: 70vh;
+            }
+        }
+
+        @media (min-width: desktop) {
+            .carousel-item img {
+                height: 80vh;
+            }
+        }
+
+        @media (min-width: desktopXG) {
+            .carousel-item img {
+                height: 90vh;
+            }
+        }
+
+        h1, h3 {
+            color: white;
+            text-align: center;
+            margin-top: $espaciado-general * 2;
+        }
+
+        p{
+            text-align: center;
+            font-size: $fuente-media;
+            color: white;
+        }
+
+        footer {
+            margin-top: $espaciado-general * 4;
+            @include flex-columna;
+
+            .container-redes a {
+                color: $color-terciario;
+                text-decoration: none;
+                font-size: $icono;
+            }
+
+        }
+
+
+     
