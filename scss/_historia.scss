@@ -1,0 +1,40 @@
+.container{
+    max-width: 500px;
+    width: 100%;
+    padding: 45 px 20px;
+    margin: 0 auto;
+    margin-top: $espaciado-general *1;
+    background-color: #0331af8f;
+}
+.container {
+    @include flex-columna;
+    gap: $espaciado-general *2;
+    
+    
+}
+@media (min-width: $tablet) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        }
+}
+
+@media (min-width: $desktop) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        justify-items: center;
+        align-items: center;
+        }
+}
+
+@media (min-width: $desktopXG) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        justify-items: center;
+        align-items: center;
+        }
+}

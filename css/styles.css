@@ -5,6 +5,13 @@
 /*RESOLUCIONES DE PANTALLAS*/
 /*ESPACIADO*/
 /*MIXINS*/
+.boton {
+  border: solid 1px #ffff00;
+  width: 200px;
+  text-align: center;
+  padding: 5px 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +20,6 @@
 a {
   text-decoration: none;
   color: white;
-}
-
-img {
-  max-width: 100%;
 }
 
 /* PANTALLAS CHICAS*/
@@ -112,14 +115,25 @@ img {
 /*CON SASS*/
 body {
   font-size: "Montserrat", sans-serif;
-  background-color: #000000;
+  background-image: url(../img/fondocontacto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .nav-link {
-  color: #b2b2b2;
+  color: blue;
 }
 .nav-link:hover {
   color: yellow;
+}
+
+.navbar-brand {
+  color: #b2b2b2;
+}
+.navbar-brand:hover {
+  color: blue;
 }
 
 .navbar-toggler {
@@ -127,24 +141,29 @@ body {
 }
 
 .carousel-item img {
-  height: 250px;
+  height: 300px;
 }
 
 @media (min-width: 768px) {
   .carousel-item img {
+    height: 60vh;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-item img {
     height: 70vh;
   }
 }
-@media (min-width: desktop) {
-  .carousel-item img {
-    height: 80vh;
-  }
-}
-@media (min-width: desktopXG) {
+@media (min-width: 1200PX) {
   .carousel-item img {
     height: 90vh;
   }
 }
+#carouselExampleFade {
+  width: 70%;
+  margin: 0 auto;
+}
+
 h1, h3 {
   color: white;
   text-align: center;
@@ -168,6 +187,182 @@ footer .container-redes a {
   color: #ffff00;
   text-decoration: none;
   font-size: 40px;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contacto-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .contacto-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+iframe {
+  max-width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+form .campos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .contacto-main {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200PX) {
+  .contacto-main {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+.indicaciones {
+  color: blue;
+}
+
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 45 px 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color: rgba(3, 49, 175, 0.5607843137);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1200PX) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    justify-items: center;
+    align-items: center;
+  }
+}
+.gale-hijo img {
+  height: 250px;
+}
+
+.titulo-galeria {
+  margin-bottom: 40px;
+  background-color: #000000;
+}
+
+@media (min-width: 768px) {
+  .container-galeria img {
+    height: 60vh;
+  }
+}
+@media (min-width: 480px) {
+  .container-galeria img {
+    height: 30vh;
+  }
+}
+@media (min-width: 992px) {
+  .container-galeria img {
+    height: 70vh;
+  }
+}
+@media (min-width: 1200PX) {
+  .container-galeria img {
+    height: 80vh;
+  }
+}
+.container-galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+@media (min-width: 480px) {
+  .container-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .container-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .container-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+@media (min-width: 1200PX) {
+  .container-galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+.card-title {
+  text-align: center;
+}
+
+.card {
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

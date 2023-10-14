@@ -1,7 +1,8 @@
 /*PALETA DE COLORES*/
 $color-primario:  #000000;
 $color-secundario: #b2b2b2;
-$color-terciario: #ffff00;     
+$color-terciario: #ffff00;    
+$color-opcional: blue;
 
 /*FUENTE PRINCIPAL*/
 $fuente-principal: 'Montserrat', sans-serif;
@@ -13,6 +14,7 @@ $fuente-grande: 28px;
 $icono: 40px;
 
 /*RESOLUCIONES DE PANTALLAS*/
+$celulares: 480px;
 $tablet: 768px;
 $desktop: 992px;
 $desktopXG: 1200PX;
@@ -34,4 +36,11 @@ $espaciado-general: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+.boton {
+    border: solid 1px $color-terciario;
+    width: 200px;
+    text-align: center;
+    padding: 5px $espaciado-general;
 }

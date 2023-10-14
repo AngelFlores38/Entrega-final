@@ -9,11 +9,6 @@ a {
     color: white;
 }
 
-img {
-    max-width: 100%;
-}
-
-
 
 
 /* PANTALLAS CHICAS*/
@@ -121,41 +116,58 @@ justify-content: end;
 /*CON SASS*/
 body{
     font-size: $fuente-principal;
-    background-color: $color-primario;
+    background-image: url(../img/fondocontacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     }
 
-        .nav-link  {
-            color: $color-secundario;
+        .nav-link {
+            color: $color-opcional;
+            
         
             &:hover{
                 color: yellow
             }
         }
-
+        .navbar-brand {
+            color: $color-secundario;
+            &:hover {
+                color: blue;
+            }
+        }
+            
+        
         .navbar-toggler {
             background-color: $color-terciario;
         }
 
         .carousel-item img {
-            height: 250px;
+            height: 300px;
         }
 
         @media (min-width: $tablet) {
+            .carousel-item img {
+                height: 60vh;
+            }
+        }
+
+        @media (min-width: $desktop) {
             .carousel-item img {
                 height: 70vh;
             }
         }
 
-        @media (min-width: desktop) {
-            .carousel-item img {
-                height: 80vh;
-            }
-        }
-
-        @media (min-width: desktopXG) {
+        @media (min-width: $desktopXG) {
             .carousel-item img {
                 height: 90vh;
             }
+        }
+
+        #carouselExampleFade {
+            width: 70%;
+            margin: 0 auto;
         }
 
         h1, h3 {
@@ -181,8 +193,15 @@ body{
             }
 
         }
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
 
-       
+        
+    
+        
+        
 
 
     

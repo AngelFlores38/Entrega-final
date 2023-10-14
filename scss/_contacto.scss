@@ -1,0 +1,56 @@
+h2 {
+    text-align: center;
+    margin-top: $espaciado-general;
+}
+
+.contacto-main {
+    @include flex-columna;
+    gap: $espaciado-general *2;
+}
+
+@media (min-width: $tablet) {
+    .contacto-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        
+        }
+}
+
+iframe {
+    max-width: 100%;
+}
+
+form {
+    @include flex-columna;
+    gap: $espaciado-general;
+
+    .campos {
+        @include flex-columna
+    }
+}
+
+@media (min-width: $desktop) {
+    .contacto-main {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        justify-items: center;
+        align-items: center;
+        }
+
+}
+
+@media (min-width: $desktopXG) {
+    .contacto-main {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        justify-items: center;
+        align-items: center;
+        }
+}
+
+.indicaciones {
+    color: $color-opcional;
+}
+
